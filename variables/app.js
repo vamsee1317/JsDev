@@ -101,3 +101,30 @@ console.log("Zomato Variables:", restaurantName, foodItem, orderAmount, delivery
 
 // =======================================================
 
+// =======================================================
+// 📝 Assignments on Variables (Think & Create Yourself)
+// =======================================================
+
+// 1️⃣ Swiggy
+// A user places an order for food delivery on Swiggy. 
+// Create variables as per the scenario.
+
+
+// 2️⃣ Ola
+// A customer books a cab using Ola. 
+// Create variables as per the scenario.
+
+
+// 3️⃣ Paytm
+// A user makes a mobile recharge payment on Paytm. 
+// Create variables as per the scenario.
+
+
+// 4️⃣ BookMyShow
+// A user books movie tickets using BookMyShow. 
+// Create variables as per the scenario.
+
+
+// 5️⃣ LinkedIn
+// A professional creates a LinkedIn profile. 
+// Create variables as per the scenario.
