@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placements</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <h2>2. Internal JavaScript</h2>
+    <!-- Internal JS is written inside <script> tag in the same HTML file -->
+    <button id="internalBtn">Click Me (Internal JS)</button>
+
+
+    <h2>3. External JavaScript</h2>
+    <!-- External JS is linked via src attribute and written in seperate js file -->
+    <button id="externalBtn">Click Me (External JS)</button>
+
+
+    <!-- Internal Script -->
+    <script>
+        const internalBtn = document.getElementById("internalBtn");
+        internalBtn.addEventListener("click", function () {
+            alert("Hello! This is Internal JavaScript ✨");
+        });
+    </script>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
