@@ -118,3 +118,77 @@ console.log(`a = ${a}, b = ${b}`);
 // ✅ Real-time Example (Ticket Booking System)
 let tickets = 5;
 console.log("Ticket booked, Remaining: ", --tickets);
+
+// ---------------------
+// 6. Typeof Operator
+// ---------------------
+
+let phoneNumber = "asdfghjkl";
+phoneNumber = 9123456789;
+console.log("\n--- Typeof Operator ---");
+console.log(typeof(phoneNumber));  // number
+
+// ✅ Mini Project: Dynamic Form Validation
+function validateField(input) {
+    if (typeof input === "string") {
+        console.log("You entered a text field 📄");
+    } else if (typeof input === "number") {
+        console.log("You entered a number field 🔢");
+    } else {
+        console.log("Unknown input ❓");
+    }
+}
+validateField("Hello");
+validateField(123);
+
+
+// ---------------------
+// 7. Ternary Operator (? : )
+// ---------------------
+
+let employeeAge = 34;
+employeeAge >= 21 
+    ? console.log(`✅ Eligible`) 
+    : console.log(`❌ Not Eligible`);
+
+// ✅ Mini Project: Login/Logout Button
+let isLoggedIn = true;
+console.log(isLoggedIn ? "Logout" : "Login");
+
+
+// ---------------------
+// 8. Spread Operator (...)
+// ---------------------
+
+// ✅ Spread with Arrays
+const voterListOne = ["Vamsee", "Krishna", "Ram", "Krish", "Yash"];
+const voterListTwo = ["Manu", "Adwaith", "Sreeshanth", "Arun"];
+
+const finalVoterList = [...voterListOne, ...voterListTwo, ...voterListOne];
+console.log("\n--- Spread Operator (Arrays) ---");
+console.log(finalVoterList);
+
+// ✅ Spread with Objects
+const userInfo = {
+    firstName : "G Vamsi",
+    lastName : "Krishna",
+    age : 27,
+    location : "Hyd"
+}
+
+const employeeInfo = {
+    ...userInfo,
+    employeeId : 227858,
+    employeeExp : 6,
+    ...userInfo // overwrites duplicate keys
+}
+
+console.log("\n--- Spread Operator (Objects) ---");
+console.log(employeeInfo);
+
+// ✅ Mini Project: Online Store (Merge Product Details)
+const productDetails = { id: 101, name: "Laptop", price: 45000 };
+const extraDetails = { brand: "Dell", warranty: "2 Years" };
+
+const finalProduct = { ...productDetails, ...extraDetails, stock: 20 };
+console.log("Final Product Object:", finalProduct);
