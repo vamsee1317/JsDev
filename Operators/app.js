@@ -192,3 +192,58 @@ const extraDetails = { brand: "Dell", warranty: "2 Years" };
 
 const finalProduct = { ...productDetails, ...extraDetails, stock: 20 };
 console.log("Final Product Object:", finalProduct);
+
+
+
+
+
+const productInfo = [
+    {
+        productName: "iPhone 15 Pro",
+        internalStorage: "512GB",
+        colors: ["Black Titanium", "White Titanium", "Blue Titanium"],
+        priceDetails: {
+            basePrice: 145000,
+            discount: 5000,
+            finalPrice: 140000
+        },
+        sellers: [
+            { name: "Amazon", rating: 4.5 },
+            { name: "Flipkart", rating: 4.6 },
+            { name: "Apple Store", rating: 5.0 }
+        ],
+        accessories: ["Charger", "EarPods", "Case Cover"]
+    },
+    {
+        productName: "Samsung Galaxy S24 Ultra",
+        internalStorage: "1TB",
+        colors: ["Phantom Black", "Cream", "Lavender", "Green"],
+        priceDetails: {
+            basePrice: 159999,
+            discount: 10000,
+            finalPrice: 149999
+        },
+        sellers: [
+            { name: "Samsung Store", rating: 4.8 },
+            { name: "Reliance Digital", rating: 4.4 }
+        ],
+        accessories: ["S Pen", "Fast Charger", "Protective Case"]
+    },
+    {
+        productName: "OnePlus 12",
+        internalStorage: "256GB",
+        colors: ["Flowy Emerald", "Silky Black"],
+        priceDetails: {
+            basePrice: 69999,
+            discount: 4000,
+            finalPrice: 65999
+        },
+        sellers: [
+            { name: "Amazon", rating: 4.3 },
+            { name: "OnePlus Store", rating: 4.7 }
+        ],
+        accessories: ["Charger", "Case Cover", "Screen Protector"]
+    }
+];
+
+console.log(productInfo);
