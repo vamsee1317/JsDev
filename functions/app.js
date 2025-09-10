@@ -156,10 +156,57 @@ console.log("Total:", total); // 3500
 const discounted = applyDiscount(total, 10);
 console.log("After Discount:", discounted); // 3150
 
-// 4. Anonymous Function
-// 5. IIFE (Immediately Invoked Function Expression
+// 4. Anonymous Function :
+// - A function without a name, often used as an argument to other functions or assigned to variables.
+// Example:
+setTimeout(function () {
+    console.log("This is an anonymous function executed after 2 seconds");
+}, 2000);
+
+// 5. IIFE (Immediately Invoked Function Expression):
+// - A function that runs as soon as it is defined.
+// Example:
+(function () {
+    console.log("This is an IIFE, executed immediately upon definition");
+})();
 // 6. Recursive Function
-// 7. Callback Function
+// 7. Callback Function :
+// Step 1: Define a register function that accepts user data and a callback
+function registerUser(userData, callback) {
+    console.log("Registering user...");
+
+    // Simulating async operation like API/database save
+    setTimeout(() => {
+        console.log("✅ Registration successful for:", userData.username);
+
+        // After registration, call the callback function and pass credentials
+        callback({
+            username: userData.username,
+            email: userData.email,
+            password: userData.password   // (In real projects, don't expose raw passwords)
+        });
+    }, 2000);
+}
+
+// Step 2: Define a callback function to share credentials
+function shareCredentials(credentials) {
+    console.log("\n📢 Sharing Credentials:");
+    console.log("Username:", credentials.username);
+    console.log("Email:", credentials.email);
+    console.log("Password:", credentials.password);
+}
+
+// Step 3: Call registerUser and pass shareCredentials as callback
+registerUser(
+    {
+        username: "vamsi123",
+        email: "vamsi@example.com",
+        password: "SecurePass@123"
+    },
+    shareCredentials
+);
+
+
 // 8. Higher-Order Function
 // 9. Generator Function
 // 10. Async Function
