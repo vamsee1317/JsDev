@@ -210,3 +210,126 @@ registerUser(
 // 8. Higher-Order Function
 // 9. Generator Function
 // 10. Async Function
+
+
+
+
+
+// Function Syntax :
+
+// Function Declaration :
+function greet(){
+    console.log(`Hello, World!`);
+}
+greet();
+
+// Function Expression :
+const greetExp = function(){
+    console.log(`Hello, World!`);
+}
+
+greetExp();
+
+// Arrow Function :
+
+const greetArrow = () => {
+    console.log(`Hello, World!`);
+}
+
+greetArrow();
+
+// Function with Parameters and Arguments :
+
+function greetUser(name, age){
+    console.log(`Hello, ${name}! You are ${age} years old.`);
+}
+
+greetUser("Vamseee", 27); // Arguments
+greetUser("Alice", 30);   // Arguments
+greetUser();              // No arguments, will be undefined
+
+// Function with Return Statement :
+
+function add(a, b){
+    return a + b; // return stops execution, so console.log after this won't run
+    console.log("This won't be logged");
+}
+
+console.log(add(5, 3));
+
+const result = add(10, 15);
+console.log(result);
+
+// Function with Default Parameters :
+
+function greetWithDefaults(name = "Guest", age = "unknown age"){
+    console.log(`Hello, ${name}! You are ${age} years old.`);
+}
+
+greetWithDefaults("Vamseee", 27); // Arguments
+greetWithDefaults("John");        // One argument, second uses default
+greetWithDefaults();              // No arguments, both defaults used
+
+// Callback Function : 
+// passing function as an argument to another function
+
+function register(name, cb){
+    console.log("Registering user...");
+    console.log(`User ${name} registered successfully!`);
+    cb(); // callback function
+}
+
+
+function sendDetails(){
+    console.log("Sending details...");
+    console.log("Details sent successfully!");
+}
+
+register("Vamseee", sendDetails); // passing function as argument
+
+
+// IIFE (Immediately Invoked Function Expression) :
+
+((name, age)=>{
+    console.log("This is an IIFE, executed immediately upon definition");
+    console.log(`Hello, ${name} ! You are ${age} years old.`);
+})("Vamseee", 27); // passing arguments
+
+
+// SetTimeout function : 
+
+
+setTimeout(()=>{
+    console.log(`This is a delayed message`);
+}, 5000); // 5000 milliseconds = 5 seconds
+
+
+// SetInterval function :
+
+// Run a timer for 60 second
+
+// let seconds = 0;
+
+// setInterval(()=>{
+//     if(seconds < 60){
+//         seconds++;
+//         console.log(`Timer: ${seconds} seconds`);
+//     } else {
+//         console.log("Timer completed!");
+//     }
+// }, 1000); // 3000 milliseconds = 3 seconds
+
+
+// Run a timer for 60 seconds and then clear the interval
+
+let seconds = 0;
+
+const intervalId = setInterval(()=>{
+    if(seconds < 60){
+        seconds++;
+        console.log(`Timer: ${seconds} seconds`);
+    } else {
+        console.log("Timer completed!");
+        clearInterval(intervalId); // Clear the interval
+    }
+}, 1000); // 1000 milliseconds = 1 second
