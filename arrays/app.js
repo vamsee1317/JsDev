@@ -78,5 +78,52 @@ productCategories.push("Books"); // Adding "Books" again to demonstrate lastInde
 const lastBooksIndex = productCategories.lastIndexOf("Books");
 console.log(lastBooksIndex); // Last index of "Books"
 
-
 console.log(productCategories);
+console.log(`-------------------`)
+
+// forEach() : forEach helps us to iterate over each element in an array.
+
+const numList = [10, 20, 31, 40, 50];
+
+numList.forEach((num)=>{
+    console.log(num * num);
+}); 
+
+// map() : map helps us to create a new array by applying a function to each element of the original array.                    
+
+  const squaredNumbers = numList.map((num) => num * num);
+    console.log(squaredNumbers); // [100, 400, 961, 1600, 2500]
+
+// filter() : filter helps us to create a new array with all elements that pass the test implemented by the provided function.
+
+const oddNumbers = numList.filter((num) => num % 2 !== 0);
+console.log(oddNumbers); // [31]
+
+// reduce() : reduce helps us to execute a reducer function on each element of the array, resulting in a single output value.
+
+const sum = numList.reduce((a, b)=> a + b, 1000);
+console.log(sum); // 1151
+
+// find() : find helps us to return the value of the first element in the array that satisfies the provided testing function. Otherwise, undefined is returned.
+
+const firstOddNumber = numList.find((num) => num % 2 !== 0);
+console.log(firstOddNumber); // 31
+
+// sort() : sort helps us to sort the elements of an array in place and returns the sorted array.
+
+const sortedNumbers = numList.sort((a, b) => b - a);
+console.log(sortedNumbers); // [50, 40, 31, 20, 10]
+
+
+// fill() : fill helps us to fill all the elements of an array from a start index to an end index with a static value.
+
+const filledArray = numList.fill(0, 1, 4);
+console.log(filledArray); // [10, 0, 0, 0, 50];
+
+// includes() : includes helps us to determine whether an array includes a certain value among its entries, returning true or false as appropriate.
+
+const hasTwenty = numList.includes(20);
+console.log(hasTwenty); // true
+
+const hasSixty = numList.includes(60);
+console.log(hasSixty); // false
