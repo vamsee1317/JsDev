@@ -8,3 +8,8 @@
 
 
 // DOM Selectors : 
+// 1. getElementById() : It is used to select a single element based on its ID attribute.
+// 2. getElementsByClassName() : It is used to select multiple elements based on their class attribute.
+// 3. getElementsByTagName() : It is used to select multiple elements based on their tag name.
+// 4. querySelector() : It is used to select the first element that matches a specified CSS selector.
+// 5. querySelectorAll() : It is used to select all elements that match a specified CSS selector.
