@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Blog Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header id="main-header">
+    <h1 class="logo">Tech Blog</h1>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#" class="nav-link">Articles</a></li>
+        <li><a href="#" class="nav-link">About</a></li>
+        <li><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <nav id="navbar">
+    <ul id="navList"></ul>
+  </nav>
+
+  <!-- MAIN LAYOUT -->
+  <main class="layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <input type="text" id="search-box" placeholder="Search articles">
+      <h3>Categories</h3>
+      <ul class="category-list">
+        <li data-type="frontend">Frontend</li>
+        <li data-type="backend">Backend</li>
+        <li data-type="database">Database</li>
+        <li data-type="devops">DevOps</li>
+      </ul>
+    </aside>
+
+    <!-- CONTENT AREA -->
+    <section class="content">
+      <article class="post featured" id="post-1">
+        <h2 class="post-title post-meta">Getting Started with DOM</h2>
+        <p class="post-meta">By <span class="author">Vamsi</span> | <span class="date">Sep 18, 2025</span></p>
+        <p class="post-body">DOM stands for Document Object Model. It is the structured representation of HTML elements...</p>
+        <button class="read-more">Read More</button>
+      </article>
+
+      <article class="post" id="post-2">
+        <h2 class="post-title">Mastering CSS Selectors</h2>
+        <p class="post-meta">By <span class="author">Nobitha</span> | <span class="date">Sep 17, 2025</span></p>
+        <p class="post-body">CSS selectors are patterns used to select elements. They are super important for DOM manipulation...</p>
+        <button class="read-more">Read More</button>
+      </article>
+
+      <article class="post" id="post-3">
+        <h2 class="post-title">JavaScript Functions Deep Dive</h2>
+        <p class="post-meta">By <span class="author">Alex</span> | <span class="date">Sep 16, 2025</span></p>
+        <p class="post-body">Functions in JavaScript can be declared in different ways: declarations, expressions, arrow functions...</p>
+        <button class="read-more">Read More</button>
+      </article>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="main-footer">
+    <p class="footer-text">© 2025 Tech Blog | <a href="privacy.html" class="footer-link">Privacy Policy</a></p>
+  </footer>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
