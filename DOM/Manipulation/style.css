@@ -1,0 +1,73 @@
+/* Container */
+#productContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Card styling */
+.card, .productCard{
+  width: 280px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  flex-grow: 1;
+  background: #f8f8f8;
+}
+
+.card img, .productCard img{
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card h2 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.card button {
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card .addToCart {
+  background-color: blue;
+  color: white;
+}
+
+.card .outOfStock {
+  background-color: red;
+  color: white;
+  cursor: not-allowed;
+}
+
+/* Banners */
+.pbanner, .festivbanner {
+  color: white;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.newHeader{
+    background-color: lightgrey;
+    padding: 10px;
+    text-align: center; 
+}
+
+.header{
+    font-size: 30px;
+}
