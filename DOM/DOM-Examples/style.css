@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container h2 {
+  margin-bottom: 10px;
+}
+
+.input-box {
+  width: 250px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: tomato;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 14px;
+  color: blue;
+}
