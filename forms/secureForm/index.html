@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Secure Signup & Login Demo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h2>🧠 Secure Signup Form</h2>
+    <form id="signupForm">
+      <input type="text" id="username" placeholder="Enter Username" />
+      <small class="error" id="usernameError"></small>
+
+      <input type="email" id="email" placeholder="Enter Email" />
+      <small class="error" id="emailError"></small>
+
+      <input type="password" id="password" placeholder="Enter Password" />
+      <small class="error" id="passwordError"></small>
+
+      <select id="role">
+        <option value="">Select Role</option>
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+      </select>
+      <small class="error" id="roleError"></small>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <hr />
+
+    <h2>🔐 Login Form</h2>
+    <form id="loginForm">
+      <input type="email" id="loginEmail" placeholder="Enter Email" />
+      <input type="password" id="loginPassword" placeholder="Enter Password" />
+      <button type="submit">Login</button>
+    </form>
+
+    <p id="loginMsg"></p>
+
+    <hr />
+    <div id="dashboard" class="hidden">
+      <h2>Welcome Dashboard</h2>
+      <p id="authMsg"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

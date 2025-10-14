@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="container">
+    <h1>Registration Form</h1>
+
+    <form id="userForm" novalidate>
+      <!-- First Name -->
+      <input type="text" name="firstName" placeholder="First Name" />
+      <p>First name must start with a capital letter and be 5–15 characters long.</p>
+
+      <!-- Username -->
+      <input type="text" name="username" placeholder="Username" />
+      <p>Username should be 5–12 characters long (letters & numbers only).</p>
+
+      <!-- Email -->
+      <input type="email" name="email" placeholder="Email" />
+      <p>Please enter a valid email address (e.g., user@example.com).</p>
+
+      <!-- Password -->
+      <input type="password" name="password" placeholder="Password" />
+      <p>Password must include 8–20 characters with upper, lower, number & special symbol.</p>
+
+      <!-- Telephone -->
+      <input type="tel" name="telephone" placeholder="Phone Number" />
+      <p>Enter a valid 10-digit mobile number starting with 6–9.</p>
+
+      <!-- PAN Card -->
+      <input type="text" name="panCard" placeholder="PAN Card Number" />
+      <p>Format: 5 uppercase letters, 4 digits, and 1 uppercase letter (e.g., ABCDE1234F).</p>
+
+
+      <input type="text" name="aadharCardNum" placeholder="aadhar Card Number" />
+      <p>Format: 5 uppercase letters, 4 digits, and 1 uppercase letter (e.g., ABCDE1234F).</p>
+
+
+    <input type="text" name="debitCardNum" placeholder="debit Card Number" />
+      <p>Format: 5 uppercase letters, 4 digits, and 1 uppercase letter (e.g., ABCDE1234F).</p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="formContainer">
+    <form id="registerForm" class="form" onsubmit="">
+      <p class="title">Register</p>
+      <p class="message">Signup now and get full access to our app.</p>
+
+    
+        <label for="firstname">
+          <input id="firstname" name="firstname" required type="text" class="input" placeholder="">
+          <span>Firstname</span>
+        </label>
+
+        <label for="lastname">
+          <input id="lastname" name="lastname" required type="text" class="input" placeholder="">
+          <span>Lastname</span>
+        </label>
+ 
+
+      <label for="email">
+        <input id="email" name="email" required type="email" class="input" placeholder="">
+        <span>Email</span>
+      </label>
+
+      <label for="password">
+        <input id="password" name="password" required type="password" class="input" placeholder="">
+        <span>Password</span>
+      </label>
+
+      <label for="confirmPassword">
+        <input id="confirmPassword" name="confirmPassword" required type="password" class="input" placeholder="">
+        <span>Confirm password</span>
+      </label>
+
+      <button id="submitBtn" type="submit" class="submit">Submit</button>
+      <p class="signin">Already have an account? <a id="signinLink" href="#">Signin</a></p>
+    </form>
+  </div>
+
+
+  <script src="./app.js"></script>
+</body>
+
+</html>
