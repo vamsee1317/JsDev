@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #grandParent{
+            background-color: lightblue;
+            padding: 80px;
+        }
+        #parent{
+            background-color: lightgreen;
+            padding: 60px;
+        }
+        #child{
+            background-color: lightcoral;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Inline Event -->
+
+    <button onclick="showAlert()" onclick="alert(`OneMoreEvent`)">Show Alert</button>
+
+
+    <!-- DOM Event Prop -->
+
+    <button id="domEventBtn">DOM Event Button</button>
+
+    <!-- Event Listener -->
+    <button id="eventListenerBtn">Event Listener Button</button>
+
+    <!-- Event Bubbling -->
+
+    <div id="grandParent">
+        Grand Parent
+        <div id="parent">
+            Parent
+            <div id="child">
+                Child
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <ul id="navList">
+        <!-- li without anchor -->
+        <li>Google</li>
+        <li>Facebook</li>
+        <li>Twitter</li>
+        <li>LinkedIn</li>
+        <li>Instagram</li>
+    </ul>
+    <script src="./app.js"></script>
+</body>
+</html>
