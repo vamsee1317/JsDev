@@ -1,0 +1,30 @@
+#products{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#products .product-card{
+    flex-grow: 1;
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    text-align: center;
+    margin: 5px;
+}
+#products .product-card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+#products .product-card img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+
+#products .product-card h3, #products .product-card p{
+    margin: 5px 0;
+}
