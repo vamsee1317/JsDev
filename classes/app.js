@@ -9,16 +9,18 @@
 
     // example of an Object without class :
 
-        let user1 = {
+        const user1 = {
             // Props :
-            name : "Vamsi",
+            fname : "Vamsi",
             email : "vamsi@gmail.com",
             // Methods :
-            greet : function(){
-                console.log(`Hello ${this.name}`);
+            greet : ()=>{
+                console.log(`Hello ${this.fname}`);
+                console.log(this.fname);
             }
         }
 
+            user1.greet();
 
         let user2 = {
             // Props :

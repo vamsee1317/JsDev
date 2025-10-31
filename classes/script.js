@@ -2,56 +2,56 @@
 
 // Objects :
 
-// const car = {
-//     // Properties: Describe the characteristics of the car
-//     brand: "Tesla",
-//     model: "Model S",
-//     color: "Red",
-//     year: 2024,
-//     isStarted: false,
-//     speed: 0,
+const car = {
+    // Properties: Describe the characteristics of the car
+    brand: "Tesla",
+    model: "Model S",
+    color: "Red",
+    year: 2024,
+    isStarted: false,
+    speed: 0,
 
-//     // Methods: Describe the actions a car can perform
-//     start : ()=> {
-//         if (!this.isStarted) {
-//             this.isStarted = true;
-//             console.log(`${this.brand} ${this.model} started.`);
-//         } 
-//     },
+    // Methods: Describe the actions a car can perform
+    start : ()=> {
+        if (!this.isStarted) {
+            this.isStarted = true;
+            console.log(`${this.brand} ${this.model} started.`);
+        } 
+    },
 
-//     stop : () => {
-//         if (this.isStarted) {
-//             this.isStarted = false;
-//             this.speed = 0;
-//             console.log(`${this.brand} ${this.model} stopped.`);
-//         } else {
-//             console.log(`${this.brand} ${this.model} is already stopped.`);
-//         }
-//     },
+    stop : () => {
+        if (this.isStarted) {
+            this.isStarted = false;
+            this.speed = 0;
+            console.log(`${this.brand} ${this.model} stopped.`);
+        } else {
+            console.log(`${this.brand} ${this.model} is already stopped.`);
+        }
+    },
 
-//     accelerate : (amount) => {
-//         if (this.isStarted) {
-//             this.speed += amount;
-//             console.log(`${this.brand} ${this.model} is now going at ${this.speed} km/h.`);
-//         } else {
-//             console.log(`Start the car before accelerating.`);
-//         }
-//     },
+    accelerate : (amount) => {
+        if (this.isStarted) {
+            this.speed += amount;
+            console.log(`${this.brand} ${this.model} is now going at ${this.speed} km/h.`);
+        } else {
+            console.log(`Start the car before accelerating.`);
+        }
+    },
 
-//     brake : (amount) =>{
-//         if (this.isStarted && this.speed > 0) {
-//             this.speed -= amount;
-//             if (this.speed < 0) this.speed = 0;
-//             console.log(`${this.brand} ${this.model} slowed down to ${this.speed} km/h.`);
-//         } else {
-//             console.log(`Car is already stopped.`);
-//         }
-//     },
+    brake : (amount) =>{
+        if (this.isStarted && this.speed > 0) {
+            this.speed -= amount;
+            if (this.speed < 0) this.speed = 0;
+            console.log(`${this.brand} ${this.model} slowed down to ${this.speed} km/h.`);
+        } else {
+            console.log(`Car is already stopped.`);
+        }
+    },
 
-//     getDetails : () => {
-//         return(`Car: ${this.brand} ${this.model}, Color: ${this.color}, Year: ${this.year}`);
-//     }
-// };
+    getDetails : () => {
+        return(`Car: ${this.brand} ${this.model}, Color: ${this.color}, Year: ${this.year}`);
+    }
+};
 
 // car.fuelVariant = "Petrol";
 
@@ -59,9 +59,9 @@
 
 
 // // Example usage
-// console.log(car.getDetails());
-// car.start();
-// car.accelerate(40);
+car.getDetails();
+car.start();
+car.accelerate(40);
 // car.brake(10);
 // car.stop();
 
